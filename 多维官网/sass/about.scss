@@ -1,0 +1,98 @@
+.page-wrap{
+  .about-container{
+    padding-top: 50px;
+    display: flex;
+    .about-content{
+      flex:1;
+      overflow: hidden;
+      p{
+        line-height: 30px;
+        font-size: 14px;
+        color:#333;
+        text-indent: 2em;
+      }
+    }
+    aslide{
+      width: 280px;
+      margin-left: 20px;
+      h2{
+        line-height: 30px;
+        font-size: 18px;
+        color:#333;
+        font-weight: 450;
+        margin-bottom: 10px;
+      }
+      .form-wrap{
+        border: 1px solid #e2e2e2;
+        h1{
+          line-height: 60px;
+          height: 60px;
+          background-color: #1f80cd;
+          font-size: 20px;
+          color:#fff;
+          text-align: center;
+          margin: 0;
+        }
+        .form-box{
+          padding: 20px 20px 10px;
+          .inputgroup{
+            width: 100%;
+            height: 48px;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            align-items: center;
+            align-content: center;
+            .input{
+              flex:1;
+              input{
+                width: 100%;
+                height: 48px;
+                padding: 10px 0px;
+                line-height: 48px;
+                color:#999;
+                font-size: 14px;
+                border: none;
+                outline: none;
+              }
+            }
+            span{
+              display: block;
+              font-style: normal;
+              width: 30px;
+              text-align: center;
+            }
+          }
+          .btnbox{
+            padding-bottom: 10px;
+            button{
+              background-color: #1f80cd;
+              font-size: 20px;
+              color:#fff;
+              text-align: center;
+              line-height: 48px;
+              height: 48px;
+              border: none;
+              border-radius: 10px;
+              width: 100%;
+              cursor: pointer;
+              transition: all ease-in-out .6s;
+              &:hover{
+                opacity: 0.85
+              }
+            }
+          }
+          p{
+            width: 100%;
+            font-size: 12px;
+            color:#999;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

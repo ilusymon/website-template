@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.news-wrap .cover { width: 100%; overflow: hidden; }
+.news-wrap .cover img { width: 100%; height: 100%; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all ease-in-out .5s; transition: all ease-in-out .5s; }
+.news-wrap .cover:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+.news-wrap .menu { display: -webkit-box; display: -ms-flexbox; display: flex; height: 125px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: center; align-content: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.news-wrap .menu a { font-size: 24px; line-height: 36px; color: #333; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.news-wrap .menu a:hover span, .news-wrap .menu a.on span { color: #1f80cd; }
+.news-wrap .menu a span { display: block; padding: 0 30px; }
+.news-wrap .menu a:before { content: "/"; }
+.news-wrap .menu a:last-child:after { content: "/"; }
+.news-wrap .news-container { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.news-wrap .news-container .main { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 380px; overflow: hidden; }
+.news-wrap .news-container .main .swiper-box .gallery-top { height: 380px; }
+.news-wrap .news-container .main .swiper-box .gallery-top .textbox { height: 50px; line-height: 50px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 20px; font-size: 18px; }
+.news-wrap .news-container .main .swiper-box .gallery-top .swiper-slide a { display: block; width: 100%; height: 100%; }
+.news-wrap .news-container .main .swiper-box .gallery-top .swiper-pagination { bottom: 60px; }
+.news-wrap .news-container .main .swiper-box .gallery-top .swiper-pagination .swiper-pagination-bullet { background-color: #fff; opacity: 1; width: 10px; height: 10px; }
+.news-wrap .news-container .main .swiper-box .gallery-top .swiper-pagination .swiper-pagination-bullet-active { background-color: #fec107; }
+.news-wrap .news-container .aslide { width: 380px; height: 380px; overflow: hidden; margin-left: 20px; }
+.news-wrap .news-container .aslide .recommend { width: 100%; height: 100%; display: block; overflow: hidden; position: relative; }
+.news-wrap .news-container .aslide .recommend p { background-color: rgba(0, 0, 0, 0.5); line-height: 50px; padding: 0 20px; color: #333; font-size: 18px; white-space: nowrap; word-wrap: break-word; overflow: hidden; text-overflow: ellipsis; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; color: #fff; }
+.news-wrap.news-list-wrap { margin-top: 20px; border: 1px solid #e2e2e2; padding: 0 20px; }
+.news-wrap.news-list-wrap h2 { line-height: 60px; height: 60px; font-size: 24px; color: #333; font-weight: 500; }
+.news-wrap.news-list-wrap .mainlist { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; overflow: hidden; height: 390px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.news-wrap.news-list-wrap .mainlist a { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 20px; overflow: hidden; display: block; }
+.news-wrap.news-list-wrap .mainlist a .cover { height: 340px; }
+.news-wrap.news-list-wrap .mainlist a p { line-height: 50px; color: #333; font-size: 18px; white-space: nowrap; word-wrap: break-word; overflow: hidden; text-overflow: ellipsis; }
+.news-wrap.news-list-wrap .mainlist a:hover p { color: #1f80cd; }
+.news-wrap.news-list-wrap .mainlist a:last-child { margin-right: 0; }
+.news-wrap.news-list-wrap .aslidelist { width: 380px; height: 100%; overflow: hidden; margin-left: 20px; }
+.news-wrap.news-list-wrap .aslidelist ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.news-wrap.news-list-wrap .aslidelist ul li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 50%; overflow: hidden; margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.news-wrap.news-list-wrap .aslidelist ul li:before { content: "·"; width: 30px; height: 36px; line-height: 36px; display: block; font-size: 22px; color: #333; }
+.news-wrap.news-list-wrap .aslidelist ul li:last-child { margin-bottom: 0; }
+.news-wrap.news-list-wrap .aslidelist ul li a { font-size: 23px; color: #333; line-height: 36px; margin-bottom: 5px; display: block; }
+.news-wrap.news-list-wrap .aslidelist ul li a:hover { color: #1f80cd; }
+.news-wrap.news-list-wrap .aslidelist ul li span { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size: 18px; color: #666; line-height: 36px; }
+.news-wrap .news-container .news-list,.news-wrap .news-container .detail-wrap{border: 1px solid #eeeeee;padding: 20px;width: 100%;overflow: hidden;}
+.news-wrap .news-container .news-list .item{display: flex;overflow: hidden;border-bottom: 1px solid #dedede;margin-bottom: 20px;padding-bottom: 20px;width: 100%;}
+.news-wrap .news-container .news-list .item:last-child{border-bottom: none;margin-bottom: 0;padding-bottom: 0;}
+.news-wrap .news-container .news-list .item .thumb-wrap{width: 285px;height: 215px;overflow: hidden;}
+.news-wrap .news-container .news-list .item .content{flex:1;overflow:hidden;margin-left: 20px;}
+.news-wrap .news-container .news-list .item .content h2{line-height: 36px;font-size: 24px;color:#333;font-weight: 450;height: 36px;margin-bottom: 15px;width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.news-wrap .news-container .news-list .item .content h2 a{color:#333;}
+.news-wrap .news-container .news-list .item .content h2 a:hover{color:#1f80cd;}
+.news-wrap .news-container .news-list .item .content p{font-size: 18px;color:#666;line-height: 30px;}
+.detail-wrap h1,.detail-wrap p{margin: 0;padding: 0;}
+.detail-wrap h1{font-size: 30px;color:#333;line-height: 50px;padding-bottom: 20px;margin-bottom: 20px;font-weight: 400;text-align: center;border-bottom: 1px solid #dedede;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.detail-wrap .detail-content{font-size: 16px;color:#333333;line-height: 36px;}
+.detail-wrap .detail-content p{word-break: break-all;word-wrap: break-word;}

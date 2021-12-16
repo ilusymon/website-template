@@ -1,0 +1,290 @@
+.news-wrap {
+  .cover {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      transition: all ease-in-out .5s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    height: 125px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    a {
+      font-size: 24px;
+      line-height: 36px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      span {
+        display: block;
+        padding: 0 30px;
+      }
+      &:before {
+        content: "/";
+      }
+      &:last-child {
+        &:after {
+          content: "/";
+        }
+      }
+    }
+  }
+  .news-container {
+    display: flex;
+    .main {
+      flex: 1;
+      height: 380px;
+      overflow: hidden;
+      .swiper-box {
+        .gallery-top {
+          height: 380px;
+          .textbox {
+            height: 50px;
+            line-height: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 20px;
+            font-size: 18px;
+          }
+          .swiper-slide {
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .swiper-pagination {
+            bottom: 60px;
+            .swiper-pagination-bullet {
+              background-color: #fff;
+              opacity: 1;
+              width: 10px;
+              height: 10px;
+            }
+            .swiper-pagination-bullet-active {
+              background-color: #fec107;
+            }
+          }
+        }
+      }
+    }
+    .aslide {
+      width: 380px;
+      height: 380px;
+      overflow: hidden;
+      margin-left: 20px;
+      .recommend {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        p {
+          background-color: rgba(0, 0, 0, 0.5);
+          line-height: 50px;
+          padding: 0 20px;
+          color: #333;
+          font-size: 18px;
+          white-space: nowrap;
+          word-wrap: break-word;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 50px;
+          color: #fff;
+        }
+      }
+    }
+    .news-list {
+      .item {
+        display: flex;
+        overflow: hidden;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        &:last-child {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        .thumb-wrap {
+          width: 285px;
+          height: 215px;
+          overflow: hidden;
+        }
+        .content {
+          flex: 1;
+          overflow: hidden;
+          margin-left: 20px;
+          h2 {
+            line-height: 36px;
+            font-size: 24px;
+            color: #333;
+            font-weight: 450;
+            height: 36px;
+            margin-bottom: 15px;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            a {
+              color: #333;
+              &:hover {
+                color: #1f80cd;
+              }
+            }
+          }
+          p {
+            font-size: 18px;
+            color: #666;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+  &.news-list-wrap {
+    margin-top: 20px;
+    border: 1px solid #e2e2e2;
+    padding: 0 20px;
+    h2 {
+      line-height: 60px;
+      height: 60px;
+      font-size: 24px;
+      color: #333;
+      font-weight: 500;
+    }
+    .mainlist {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      height: 390px;
+      justify-content: space-between;
+      a {
+        flex: 1;
+        margin-right: 20px;
+        overflow: hidden;
+        display: block;
+        .cover {
+          height: 340px;
+        }
+        p {
+          line-height: 50px;
+          color: #333;
+          font-size: 18px;
+          white-space: nowrap;
+          word-wrap: break-word;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        &:hover {
+          p {
+            color: #1f80cd;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .aslidelist {
+      width: 380px;
+      height: 100%;
+      overflow: hidden;
+      margin-left: 20px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          flex: 1;
+          height: 50%;
+          overflow: hidden;
+          margin-bottom: 20px;
+          display: flex;
+          &:before {
+            content: "·";
+            width: 30px;
+            height: 36px;
+            line-height: 36px;
+            display: block;
+            font-size: 22px;
+            color: #333;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 23px;
+            color: #333;
+            line-height: 36px;
+            margin-bottom: 5px;
+            display: block;
+            &:hover {
+              color: #1f80cd;
+            }
+          }
+          span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 18px;
+            color: #666;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+.news-wrap .menu a:hover span, .news-wrap .menu a.on span {
+  color: #1f80cd;
+}
+.news-wrap .news-container .news-list,.news-wrap .news-container .detail-wrap {
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.detail-wrap h1,.detail-wrap p {
+  margin: 0;
+  padding: 0;
+}
+.detail-wrap {
+  h1 {
+    font-size: 30px;
+    color: #333;
+    line-height: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .detail-content {
+    font-size: 16px;
+    color: #333333;
+    line-height: 36px;
+    p {
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+  }
+}
